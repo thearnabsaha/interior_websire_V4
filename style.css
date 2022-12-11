@@ -312,13 +312,20 @@ section {
   opacity: 1;
   transform: scaleY(1);
 }
-.service-box:hover h3, .service-box:hover p {
+.service-box:hover img, .service-box:hover h3, .service-box:hover p {
   opacity: 0;
 }
 .service-box:hover .content {
   opacity: 1;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.service-box:hover .content h3 {
+  color: #fff;
+  opacity: 1;
+}
+.service-box:hover .content img {
+  opacity: 1;
 }
 
 .service-box h3 {

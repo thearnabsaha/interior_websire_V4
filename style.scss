@@ -307,6 +307,7 @@
             color: #ffffff;
             width: 15rem;
         }
+
     }
     &::after{
         position: absolute;
@@ -328,14 +329,21 @@
         
     }
     &:hover{
-        // opacity: 0;
-        h3,p{
+        img,h3,p{
           opacity: 0;
         }
         .content{
             opacity: 1;
             left: 50%;
             transform: translate(-50%,-50%);
+            h3{
+              color: #fff;
+              opacity: 1;
+
+            }
+            img{
+              opacity: 1;
+            }
         }
     }
   }
