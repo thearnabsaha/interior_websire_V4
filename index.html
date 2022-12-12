@@ -16,12 +16,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     />
-    <!-- jquery -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js">
-    </script>
+<!-- jquery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src="script.js">
+</script>
     <!-- CSS -->
     <!-- <link rel="stylesheet" href="styles.css" /> -->
     <link rel="stylesheet" href="style.css" />
@@ -29,468 +29,476 @@
   </head>
   <body>
     
-
-  <div class="hero">
-    <header>
-      <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="images\logo.png" alt="" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#About">ABOUT US</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Services">SERVICES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#Portfolio">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#workFlow">WORK FLOW</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#noLP testimonials">TESTIMONIALS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#noLP">BLOG</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#noLP">CONTACT</a>
-                </li>
-                <!-- <li class="nav-item" style="padding-top:0.4rem;">|</li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fa fa-fw fa-search"></i></a>
-                </li> -->
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-        <div id="bannerCarousel" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img id="carouselImg" src="images\bannerBG.png" class="w-100" alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <img src="images/frontTextBorder.png" alt="" />
-                <h1>We make your <span>dream Home</span></h1>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images\bannerBG.png" class="d-block w-100" alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Second slide label</h5>
-                <p>
-                  Some representative placeholder content for the second slide.
-                </p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="images\bannerBG.png" class="d-block w-100" alt="" />
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Third slide label</h5>
-                <p>
-                  Some representative placeholder content for the third slide.
-                </p>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    <div class="humWrapper">
+      <div class="mobileNav">
+        <div class="himg">
+          <img src="./images/logo.png" alt="">
         </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#workFlow">WorkFlow</a></li>
+            <li><a href="#noLP testimonials">Tetstimonials</a></li>
+            <li><a href="#noLP">Blogs</a></li>
+            <li><a href="#noLP">Contact</a></li>
+        </ul>
     </div>
-
-  <!-- About Us Section -->
-    <section id="About">
-      <div class="about">
-        <div class="row">
-          <div class="col-md-5 aboutImg">
-            <img id="ys" src="images/yellowSquare.png" alt="" />
-            <img id="table" src="images\dinning table.png" alt="" />
+      <div class="hero">
+        <header>
+          <div class="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="images\logo.png" alt="" />
+                </a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNav"
+                  aria-controls="navbarNav"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#About">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#Portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#workFlow">WORK FLOW</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#noLP testimonials">TESTIMONIALS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#noLP">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#noLP">CONTACT</a>
+                    </li>
+                    <!-- <li class="nav-item" style="padding-top:0.4rem;">|</li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-fw fa-search"></i></a>
+                    </li> -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
           </div>
-          <div class="col-md-6 aboutUs">
-            <h3 class="sectionHeading">About Us</h3>
-            <h2>
-              We do everything to fulfill our <span>clients requirement</span>
-            </h2>
-            <p id="abx">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry.
-            </p>
-
-            <div id="dt">
-              <p>Lorem Ipsum is simply dummy text</p>
-              <i class="fa-solid fa-thumbs-up"></i>
-            </div>
-            <div id="dt">
-              <p>Lorem Ipsum is simply dummy text</p>
-              <i class="fa-solid fa-thumbs-up"></i>
-            </div>
-            <button class="readMoreBtn">Read More</button>
-            <div class="stats">
-              <div id="stat1">
-                <h1>223+</h1>
-                <h6>Happy Clients</h6>
-                <img id="long" src="images/verticalYRectangle.png" alt="" />
+        </header>
+            <div id="bannerCarousel" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img id="carouselImg" src="images\bannerBG.png" class="w-100" alt="" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <img src="images/frontTextBorder.png" alt="" />
+                    <h1>We make your <span>dream Home</span></h1>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images\bannerBG.png" class="d-block w-100" alt="" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>
+                      Some representative placeholder content for the second slide.
+                    </p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="images\bannerBG.png" class="d-block w-100" alt="" />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>
+                      Some representative placeholder content for the third slide.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <div id="stat1">
-                <h1>123+</h1>
-                <h6>Success Projects</h6>
-                <img id="long" src="images/verticalYRectangle.png" alt="" />
-              </div>
-              <div id="stat1">
-                <h1>323+</h1>
-                <h6>Ongoing Project</h6>
-                <img id="long" src="images/verticalYRectangle.png" alt="" />
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-          </div>
         </div>
-      </div>
-    </section>
-
-  <!-- Services Section -->
-    <section id="Services">
-      <h3 id="leftHead" class="sectionHeading">Our Services</h3>
-      <div class="services">
-        <div class="row">
-          <div class="service-box col-lg-3">
-            <img src="images\Interior-Designer_03.jpg" alt="" />
-            <h3>3D Design Layouts</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="content">
-              <img src="images\Interior-Designer_03.jpg" alt="" />
-              <h3>3D Design Layouts</h3>
-              <a href="">READ MORE</a>
-            </div>
-          </div>
-          <div class="service-box col-lg-3">
-            <img src="images\Interior-Designer_05.jpg" alt="" />
-            <h3>Interior Decoration</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="content">
-              <img src="images\Interior-Designer_05.jpg" alt="" />
-              <h3>3D Design Layouts</h3>
-              <a href="">READ MORE</a>
-            </div>
-          </div>
-          <div class="service-box col-lg-3">
-            <img src="images\Interior-Designer_07.jpg" alt="" />
-            <h3>Great Architechture</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="content">
-              <img src="images\Interior-Designer_07.jpg" alt="" />
-              <h3>3D Design Layouts</h3>
-              <a href="">READ MORE</a>
-            </div>
-          </div>
-          <div class="service-box col-lg-3">
-            <img src="images\Interior-Designer_10.jpg" alt="" />
-            <h3>Construction Work</h3>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry.
-            </p>
-            <div class="content">
-              <img src="images\Interior-Designer_10.jpg" alt="" />
-              <h3>3D Design Layouts</h3>
-              <a href="">READ MORE</a>
-            </div>
-          </div>
-          <!-- <div id="construction" class="service-box col-lg-3">
-            <img src="images/craneIcon.png" alt="" />
-            <h3 style="color: white; margin-top: 1rem">Construction Work</h3>
-            <button class="readMoreBtn">Read more</button>
-          </div> -->
-        </div>
-      </div>
-    </section>
-
-  <!-- Portfolio Section -->
-    <section id="Portfolio">
-      <div class="container mt-3">
-        <h3 class="sectionHeading" id="leftHead">Portfolio</h3>
-        <div class="row">
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="images/projectCard0.png" alt="" class="card-img">
-              <div class="card-body">
-                <div class="text-center">
-                  <h4 class="card-title"> MODULAR KITCHEN</h4>
-                  <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
-                  <a href="#" class="btn">Full Details</a>
+    
+      <!-- About Us Section -->
+        <section id="About">
+          <div class="about">
+            <div class="row">
+              <div class="col-md-5 aboutImg">
+                <img id="ys" src="images/yellowSquare.png" alt="" />
+                <img id="table" src="images\dinning table.png" alt="" />
+              </div>
+              <div class="col-md-6 aboutUs">
+                <h3 class="sectionHeading">About Us</h3>
+                <h2>
+                  We do everything to fulfill our <span>clients requirement</span>
+                </h2>
+                <p id="abx">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry.
+                </p>
+    
+                <div id="dt">
+                  <p>Lorem Ipsum is simply dummy text</p>
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div id="dt">
+                  <p>Lorem Ipsum is simply dummy text</p>
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <button class="readMoreBtn">Read More</button>
+                <div class="stats">
+                  <div id="stat1">
+                    <h1 class="counter">223</h1>
+                    <h6>Happy Clients</h6>
+                    <img id="long" src="images/verticalYRectangle.png" alt="" />
+                  </div>
+                  <div id="stat1">
+                    <h1 class="counter">123</h1>
+                    <h6>Success Projects</h6>
+                    <img id="long" src="images/verticalYRectangle.png" alt="" />
+                  </div>
+                  <div id="stat1">
+                    <h1 class="counter">323</h1>
+                    <h6>Ongoing Project</h6>
+                    <img id="long" src="images/verticalYRectangle.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="images/projectCard0.png" alt="" class="card-img">
-              <div class="card-body">
-                <div class="text-center">
-                  <h4 class="card-title"> MODULAR KITCHEN</h4>
-                  <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
-                  <a href="#" class="btn">Full Details</a>
+        </section>
+    
+      <!-- Services Section -->
+        <section id="Services">
+          <h3 id="leftHead" class="sectionHeading">Our Services</h3>
+          <div class="services">
+            <div class="row">
+              <div class="service-box col-lg-3">
+                <img src="images\Interior-Designer_03.jpg" alt="" />
+                <h3>3D Design Layouts</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <div class="content">
+                  <img src="images\Interior-Designer_03.jpg" alt="" />
+                  <h3>3D Design Layouts</h3>
+                  <a href="">READ MORE</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="images/projectCard0.png" alt="" class="card-img">
-              <div class="card-body">
-                <div class="text-center">
-                  <h4 class="card-title"> MODULAR KITCHEN</h4>
-                  <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
-                  <a href="#" class="btn">Full Details</a>
+              <div class="service-box col-lg-3">
+                <img src="images\Interior-Designer_05.jpg" alt="" />
+                <h3>Interior Decoration</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <div class="content">
+                  <img src="images\Interior-Designer_05.jpg" alt="" />
+                  <h3>3D Design Layouts</h3>
+                  <a href="">READ MORE</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="images/projectCard0.png" alt="" class="card-img">
-              <div class="card-body">
-                <div class="text-center">
-                  <h4 class="card-title"> MODULAR KITCHEN</h4>
-                  <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
-                  <a href="#" class="btn">Full Details</a>
+              <div class="service-box col-lg-3">
+                <img src="images\Interior-Designer_07.jpg" alt="" />
+                <h3>Great Architechture</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <div class="content">
+                  <img src="images\Interior-Designer_07.jpg" alt="" />
+                  <h3>3D Design Layouts</h3>
+                  <a href="">READ MORE</a>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <img src="images/projectCard0.png" alt="" class="card-img">
-              <div class="card-body">
-                <div class="text-center">
-                  <h4 class="card-title"> MODULAR KITCHEN</h4>
-                  <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
-                  <a href="#" class="btn">Full Details</a>
+              <div class="service-box col-lg-3">
+                <img src="images\Interior-Designer_10.jpg" alt="" />
+                <h3>Construction Work</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry.
+                </p>
+                <div class="content">
+                  <img src="images\Interior-Designer_10.jpg" alt="" />
+                  <h3>3D Design Layouts</h3>
+                  <a href="">READ MORE</a>
                 </div>
               </div>
+              <!-- <div id="construction" class="service-box col-lg-3">
+                <img src="images/craneIcon.png" alt="" />
+                <h3 style="color: white; margin-top: 1rem">Construction Work</h3>
+                <button class="readMoreBtn">Read more</button>
+              </div> -->
             </div>
           </div>
-          <div class="col-lg-4 mt-4">
-            <div class="card">
-              <div class="card-body">
-                <div class="text-center">
-                  <a href="#" class="More | btn">LOAD MORE</a>
+        </section>
+    
+      <!-- Portfolio Section -->
+        <section id="Portfolio">
+          <div class="container mt-3">
+            <h3 class="sectionHeading" id="leftHead">Portfolio</h3>
+            <div class="row">
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <img src="images/projectCard0.png" alt="" class="card-img">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <h4 class="card-title"> MODULAR KITCHEN</h4>
+                      <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
+                      <a href="#" class="btn">Full Details</a>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-    </section>
-
-  <!-- Work Flow Section -->
-    <section id="workFlow">
-      <div class="container-mt-3">
-        <h3 id="leftHead" class="sectionHeading">WORK FLOW</h3>
-        <div class="workFlo">
-          <div class="workText">
-            <h6>STRATEGY</h6>
-            <h6>DEVELOPMENT</h6>
-            <h6>OWN YOUR STYLE</h6>
-          </div>
-          <img id="workImg" src="images/workFlo.jpg" alt="">
-          <div id="wt2" class="workText">
-            <h6>CONCEPT</h6>
-            <h6>PRODUCTION</h6>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <!-- Testimonials Section  -->
-  <section id="noLP testimonials">
-    <div class="row tb">
-      <div class="floatingImg | col-lg-5 col-md-12">
-        <div class="palmHouse">
-          <img src="images/house.png" alt="">
-        </div>
-      </div>
-      <div class="col-lg-6 col-md-12 tesRS">
-        <h3 class="sectionHeading">TESTIMONIALS</h3>
-        <p id="nameText">We deliver you your <span style="font-weight:700;">DREAM HOUSE</span></p>
-        <div class="profile">
-          <div class="testimonialText">
-            <p>Bella Swan</p>
-            <p class="woman">Business Woman</p>
-            <p class="feedback">
-              Lorem Ipsum is simply dummy text of the printing and 
-              typesetting industry. Lorem Ipsum has been industry's 
-              standard dummy text ever since the 1500s
-            </p>
-          </div>
-          <div class="testimonialImg">
-          <img src="images/testimony.png" alt="">
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- Contact & Blog Section -->
-  <section id="noLP">
-    <section class="contact">
-      <h3 id="blogHead">BLOGS</h3>
-       <div class="row">
-        <div id="contactDiv" class="col-lg-5 col-md-12">
-          <img style="width:100%; height:90%" src="images/contactBG.png" alt="">
-          <div class="contactInside">
-            <h3 class="sectionHeading">
-              CONTACT US
-            </h3>
-            <div class="contactInfo">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>
-              1/2 Lorem Ipsum Address
-              AK Complex
-              Near RK Hospital
-              Pin: 123456
-            </p>
-            <i class="fa-solid fa-phone-volume"></i>
-            <p>1234 5678 /9012 3456</p>
-            <i class="fa-solid fa-globe"></i>
-            <p>www.bestinterior.com</p>
-            <i class="fa-solid fa-envelope"></i>
-            <p>bestinterior@mail.com</p>
-            </div>
-          </div>
-          </div>
-        <div class="col-lg-6 col-md-12 | blogs">
-          <div class="container" style="margin-top:0 ;">
-            <div class="blogsLeft">
-              <i class="fa-solid fa-thumbs-up"><p>|</p></i> 
-              <h5>Topic Name(Furniture Color)</h5>
-              <p>Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.
-              Lorem Ipsum has been the industry.
-              </p>
-              <hr>
-              <a href="#"><h4>Read More</h4></a>
-            </div>
-            <div id="blogRight">
-              <img src="images/blog1.png" alt="">
-              <div id="bt">
-                <span>23</span>
-                <p>NOV</p>
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <img src="images/projectCard0.png" alt="" class="card-img">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <h4 class="card-title"> MODULAR KITCHEN</h4>
+                      <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
+                      <a href="#" class="btn">Full Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <img src="images/projectCard0.png" alt="" class="card-img">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <h4 class="card-title"> MODULAR KITCHEN</h4>
+                      <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
+                      <a href="#" class="btn">Full Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <img src="images/projectCard0.png" alt="" class="card-img">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <h4 class="card-title"> MODULAR KITCHEN</h4>
+                      <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
+                      <a href="#" class="btn">Full Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mt-4">
+                <div class="card">
+                  <img src="images/projectCard0.png" alt="" class="card-img">
+                  <div class="card-body">
+                    <div class="text-center">
+                      <h4 class="card-title"> MODULAR KITCHEN</h4>
+                      <h5 class="card-subtitle">PLACE: <span>Kolkata</span></h5>
+                      <a href="#" class="btn">Full Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    
+      <!-- Work Flow Section -->
+        <section id="workFlow">
+          <div class="container-mt-3">
+            <h3 id="leftHead" class="sectionHeading">WORK FLOW</h3>
+            <div class="workFlo">
+              <div class="workText">
+                <h6>STRATEGY</h6>
+                <h6>DEVELOPMENT</h6>
+                <h6>OWN YOUR STYLE</h6>
+              </div>
+              <img id="workImg" src="images/workFlo.jpg" alt="">
+              <div id="wt2" class="workText">
+                <h6>CONCEPT</h6>
+                <h6>PRODUCTION</h6>
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="blogsLeft"><i class="fa-solid fa-thumbs-up"><p>|</p></i>
-              <h5>Topic Name(Home Vastu)</h5>
-              <p>Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.
-                Lorem Ipsum has been the industry.</p>
-              <hr>
-              <a href="#"><h4>Read More</h4></a>
+        </section>
+    
+      <!-- Testimonials Section  -->
+      <section id="noLP testimonials">
+        <div class="row tb">
+          <div class="floatingImg | col-lg-5 col-md-12">
+            <div class="palmHouse">
+              <img src="images/house.png" alt="">
             </div>
-            <div id="blogRight">
-              <img src="images/blog2.png" alt="">
-              <div id="bt">
-                <span>23</span>
-                <p>NOV</p>
+          </div>
+          <div class="col-lg-6 col-md-12 tesRS">
+            <h3 class="sectionHeading">TESTIMONIALS</h3>
+            <p id="nameText">We deliver you your <span style="font-weight:700;">DREAM HOUSE</span></p>
+            <div class="profile">
+              <div class="testimonialText">
+                <p>Bella Swan</p>
+                <p class="woman">Business Woman</p>
+                <p class="feedback">
+                  Lorem Ipsum is simply dummy text of the printing and 
+                  typesetting industry. Lorem Ipsum has been industry's 
+                  standard dummy text ever since the 1500s
+                </p>
+              </div>
+              <div class="testimonialImg">
+              <img src="images/testimony.png" alt="">
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-  </section>
-
-  <footer>
-    <section>
-      <div class="footer-box row">
-        <div class="footer-even-col-left | col-lg-6 col-md-12">
-          <img src="images/logo.png" alt="">
-          <h6>We make your dream home</h6>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley</p>
-        </div>
-          <div class="footer-even-col-right | col-lg-6 col-md-12">
-            <div class="links">
-            <h4>QUICK LINKS</h4>
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#About">About Us</a></li>
-                <li><a href="#Services">Services</a></li>
-                <li><a href="#Portfolio">Projects</a></li>
-                <li><a href="#workFlow">Work Flow</a></li>
-                <li><a href="#noLP testimonials">Tetstimonials</a></li>
-                <li><a href="#noLP">Blogs</a></li>
-                <li style="padding-bottom:0 ;"><a href="#noLP">Contact</a></li>
-              </ul>
-          </div>
-          <div>
-            <h4>CONTACT US</h4>
-            <div class="address">
-              1/2 Lorem Ipsum Address <br>
-              AK Complex <br>
-              Near RK Hospital <br>
-              Pin: 123456
-            </div>
-            <div class="contac"> 
-              <ul>
-                <li><i id="phone" class="fa-solid fa-phone-volume"></i><p>234 5678 /9012 3456</p></li>
-                <li><i class="fa-solid fa-globe"></i><p>www.bestinterior.com</p></li>
-                <li><i class="fa-solid fa-envelope"></i><p>bestinterior.com</p></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        </div>
       </section>
-        <div class="copyright | w-full">
-          <div>
-          <i class="fa-regular fa-copyright"></i> 2022 by Best Interior
-        </div>
-        <div>
-          Powered by Four Source Technologies
-        </div>
-        </div>
-  </footer>
+    
+      <!-- Contact & Blog Section -->
+      <section id="noLP">
+        <section class="contact">
+          <h3 id="blogHead">BLOGS</h3>
+           <div class="row">
+            <div id="contactDiv" class="col-lg-5 col-md-12">
+              <img style="width:100%; height:90%" src="images/contactBG.png" alt="">
+              <div class="contactInside">
+                <h3 class="sectionHeading">
+                  CONTACT US
+                </h3>
+                <div class="contactInfo">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>
+                  1/2 Lorem Ipsum Address
+                  AK Complex
+                  Near RK Hospital
+                  Pin: 123456
+                </p>
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>1234 5678 /9012 3456</p>
+                <i class="fa-solid fa-globe"></i>
+                <p>www.bestinterior.com</p>
+                <i class="fa-solid fa-envelope"></i>
+                <p>bestinterior@mail.com</p>
+                </div>
+              </div>
+              </div>
+            <div class="col-lg-6 col-md-12 | blogs">
+              <div class="container" style="margin-top:0 ;">
+                <div class="blogsLeft">
+                  <i class="fa-solid fa-thumbs-up"><p>|</p></i> 
+                  <h5>Topic Name(Furniture Color)</h5>
+                  <p>Lorem Ipsum is simply dummy text of the
+                  printing and typesetting industry.
+                  Lorem Ipsum has been the industry.
+                  </p>
+                  <hr>
+                  <a href="#"><h4>Read More</h4></a>
+                </div>
+                <div id="blogRight">
+                  <img src="images/blog1.png" alt="">
+                  <div id="bt">
+                    <span>23</span>
+                    <p>NOV</p>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="blogsLeft"><i class="fa-solid fa-thumbs-up"><p>|</p></i>
+                  <h5>Topic Name(Home Vastu)</h5>
+                  <p>Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.
+                    Lorem Ipsum has been the industry.</p>
+                  <hr>
+                  <a href="#"><h4>Read More</h4></a>
+                </div>
+                <div id="blogRight">
+                  <img src="images/blog2.png" alt="">
+                  <div id="bt">
+                    <span>23</span>
+                    <p>NOV</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    
+      <footer>
+        <section>
+          <div class="footer-box row">
+            <div class="footer-even-col-left | col-lg-6 col-md-12">
+              <img src="images/logo.png" alt="">
+              <h6>We make your dream home</h6>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  when an unknown printer took a galley</p>
+            </div>
+              <div class="footer-even-col-right | col-lg-6 col-md-12">
+                <div class="links">
+                <h4>QUICK LINKS</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#About">About Us</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#workFlow">Work Flow</a></li>
+                    <li><a href="#noLP testimonials">Tetstimonials</a></li>
+                    <li><a href="#noLP">Blogs</a></li>
+                    <li style="padding-bottom:0 ;"><a href="#noLP">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="cnt">
+                <h4>CONTACT US</h4>
+                <div class="address">
+                  1/2 Lorem Ipsum Address <br>
+                  AK Complex <br>
+                  Near RK Hospital <br>
+                  Pin: 123456
+                </div>
+                <div class="contac"> 
+                  <ul>
+                    <li><i id="phone" class="fa-solid fa-phone-volume"></i><p>234 5678 /9012 3456</p></li>
+                    <li><i class="fa-solid fa-globe"></i><p>www.bestinterior.com</p></li>
+                    <li><i class="fa-solid fa-envelope"></i><p>bestinterior.com</p></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </section>
+            <div class="copyright | w-full">
+              <div>
+              <i class="fa-regular fa-copyright"></i> 2022 by Best Interior
+            </div>
+            <div>
+              Powered by Four Source Technologies
+            </div>
+            </div>
+      </footer>
+    </div>
+  
     
 
   <link rel="script" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"/>

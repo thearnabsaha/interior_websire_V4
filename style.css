@@ -173,6 +173,12 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.stats h1::after {
+  content: "+";
+}
+.stats h1 {
+  padding-right: 2rem;
+}
 
 .aboutText .readMoreBtn {
   padding: 1rem;
@@ -223,6 +229,9 @@ section {
     text-align: left;
     padding-block: 2rem 0;
   }
+  .aboutUs h2 {
+    font-size: 2rem;
+  }
   .aboutUs .sectionHeading {
     padding-left: 2rem;
   }
@@ -257,6 +266,12 @@ section {
   }
   #carouselImg {
     top: 0;
+  }
+}
+@media (max-width: 420px) {
+  #table {
+    width: 100%;
+    height: 100%;
   }
 }
 /* Services Section */
@@ -302,7 +317,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.851);
+  background-color: rgba(0, 0, 0, 0.551);
   opacity: 0;
   transition: all 0.3s ease-in-out;
   transform: scaleY(0);
@@ -312,7 +327,7 @@ section {
   opacity: 1;
   transform: scaleY(1);
 }
-.service-box:hover img, .service-box:hover h3, .service-box:hover p {
+.service-box:hover p {
   opacity: 0;
 }
 .service-box:hover .content {
@@ -339,7 +354,7 @@ section {
 
 .service-box p {
   font-size: 1.1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 
 #construction {
@@ -367,18 +382,28 @@ section {
 
 .card {
   position: relative;
+  transition: 0.3s all ease-in-out;
 }
-
+.card::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: 100% 100%;
+}
+.card:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
 .card:hover .card-body {
   display: block;
-}
-
-.card:hover {
-  background-color: #252526;
-}
-
-.card:hover .card-img {
-  z-index: -1;
 }
 
 /* .card:hover .after {
@@ -396,6 +421,7 @@ section {
   position: absolute;
   top: 25%;
   left: 20%;
+  transition: all 0.3s ease-in-out;
 }
 
 .card-title,
@@ -732,6 +758,9 @@ section {
     text-align: left;
     padding-left: 1rem;
   }
+  .blogs .container {
+    flex-direction: column;
+  }
   #blogHead:after {
     width: 14%;
     bottom: -2px;
@@ -878,10 +907,54 @@ footer ul {
 }
 
 @media (max-width: 767px) {
+  .footer-even-col-right {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+  }
   #leftHead {
     padding-left: 2rem;
   }
   #leftHead:after {
     left: 20rem;
   }
+}
+.humWrapper {
+  position: relative;
+}
+
+.mobileNav {
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  z-index: 100;
+  opacity: 95%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.mobileNav img {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #010101 1px solid;
+  margin-bottom: 1rem;
+}
+.mobileNav li {
+  list-style: none;
+  padding-bottom: 1rem;
+}
+.mobileNav li a {
+  text-decoration: none;
+  color: #010101;
+  font-size: 1.5rem;
+}
+.mobileNav li a:hover {
+  transition: all 0.1s ease-in-out;
+}
+
+.open {
+  transform: translateX(0);
 }/*# sourceMappingURL=style.css.map */
